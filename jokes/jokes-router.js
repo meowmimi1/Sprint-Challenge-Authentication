@@ -2,6 +2,10 @@ const axios = require('axios');
 
 const router = require('express').Router();
 
+
+router.get('/testing', (req, res) => {
+  res.send('Sprint yay!');
+})
 router.get('/', (req, res) => {
   const requestOptions = {
     headers: { accept: 'application/json' },
